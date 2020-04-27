@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|VT323&display=swap");
+/* line 3, ../sass/style.scss */
+:root {
+  --dark: #020511;
+  --dark-blue: #13235c;
+  --medium-blue: #304894;
+  --light-blue: #91dbf0;
+  --aqua-blue: #28dce2;
+  --light-pink: #e0b6f5;
+  --hot-pink: #f059b9;
+}
+
+/* line 13, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+  margin: auto 0;
+}
+
+/* line 18, ../sass/style.scss */
+body {
+  background: linear-gradient(90deg, #304894 0%, #f059b9 100%);
+  color: var(--hot-pink);
+  font-family: "Open Sans";
+}
+
+/* line 24, ../sass/style.scss */
+.wrapper {
+  margin: 4em auto;
+  width: 80vw;
+}
+
+/* line 34, ../sass/style.scss */
+.main-nav .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: var(--dark-blue);
+  height: fit-content;
+  padding: 1.25em 0;
+}
+/* line 42, ../sass/style.scss */
+.main-nav .nav__link {
+  font-family: "VT323", monospace;
+  font-size: 2em;
+}
+/* line 46, ../sass/style.scss */
+.main-nav .nav__link-content {
+  text-decoration: none;
+  padding: 20px;
+  color: var(--hot-pink);
+}
+/* line 51, ../sass/style.scss */
+.main-nav .nav__link-content:hover {
+  background-color: var(--medium-blue);
+  transition: ease 0.75s;
+}
+
+/* line 59, ../sass/style.scss */
+.content {
+  background-color: var(--dark);
+  height: 30vh;
+  display: flex;
+}
+/* line 63, ../sass/style.scss */
+.content__container {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  background-color: var(--dark-blue);
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 74, ../sass/style.scss */
+.header__container {
+  background-color: var(--dark);
+  display: flex;
+  justify-content: space-evenly;
+}
+/* line 80, ../sass/style.scss */
+.header__image {
+  height: 200px;
+}
+/* line 83, ../sass/style.scss */
+.header__photo {
+  height: inherit;
+  width: auto;
+  border-radius: 50%;
+}
+
+/* line 90, ../sass/style.scss */
+.container {
+  margin-bottom: 1em;
+}
