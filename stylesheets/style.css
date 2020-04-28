@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu+Mono&family=VT323&display=swap");
 /* line 3, ../sass/style.scss */
 :root {
   --dark: #020511;
   --dark-blue: #13235c;
   --medium-blue: #304894;
   --light-blue: #91dbf0;
-  --aqua-blue: #28dce2;
+  --aqua-blue: #28FBD2;
   --light-pink: #e0b6f5;
   --hot-pink: #f059b9;
 }
@@ -19,8 +19,8 @@
 /* line 18, ../sass/style.scss */
 body {
   background: linear-gradient(90deg, #304894 0%, #f059b9 100%);
-  color: var(--hot-pink);
-  font-family: "Open Sans";
+  color: var(--aqua-blue);
+  font-family: 'Open Sans';
 }
 
 /* line 24, ../sass/style.scss */
@@ -28,68 +28,117 @@ body {
   margin: 4em auto;
   width: 80vw;
 }
+@media only screen and (max-width: 551px) {
+  /* line 24, ../sass/style.scss */
+  .wrapper {
+    margin: auto;
+    width: 100%;
+  }
+}
 
-/* line 34, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
+.main-nav :nth-child(1) {
+  margin-right: auto;
+}
+/* line 40, ../sass/style.scss */
 .main-nav .nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   list-style: none;
-  background-color: var(--dark-blue);
   height: fit-content;
   padding: 1.25em 0;
 }
-/* line 42, ../sass/style.scss */
+@media only screen and (max-width: 551px) {
+  /* line 40, ../sass/style.scss */
+  .main-nav .nav {
+    display: block;
+    text-align: center;
+  }
+}
+/* line 51, ../sass/style.scss */
 .main-nav .nav__link {
   font-family: "VT323", monospace;
   font-size: 2em;
 }
-/* line 46, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 .main-nav .nav__link-content {
   text-decoration: none;
   padding: 20px;
-  color: var(--hot-pink);
+  color: var(--aqua-blue);
 }
-/* line 51, ../sass/style.scss */
+@media only screen and (max-width: 551px) {
+  /* line 55, ../sass/style.scss */
+  .main-nav .nav__link-content {
+    padding: 0;
+  }
+}
+/* line 62, ../sass/style.scss */
 .main-nav .nav__link-content:hover {
   background-color: var(--medium-blue);
   transition: ease 0.75s;
+  -webkit-clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(15% 0, 85% 0, 100% 100%, 0% 100%);
+}
+@media only screen and (max-width: 551px) {
+  /* line 62, ../sass/style.scss */
+  .main-nav .nav__link-content:hover {
+    clip-path: none;
+    background-color: transparent;
+    transition: none;
+    transform: scale(1.5);
+  }
+}
+/* line 75, ../sass/style.scss */
+.main-nav .nav__logo {
+  padding-left: 0;
+}
+/* line 77, ../sass/style.scss */
+.main-nav .nav__logo:hover {
+  background-color: none;
+  clip-path: none;
+  background-color: transparent;
+  transition: none;
 }
 
-/* line 59, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 .content {
   background-color: var(--dark);
   height: 30vh;
   display: flex;
 }
-/* line 63, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 .content__container {
   display: flex;
+  flex-wrap: wrap;
   height: 50%;
   width: 50%;
-  background-color: var(--dark-blue);
   justify-content: center;
   align-items: center;
 }
 
-/* line 74, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .header__container {
   background-color: var(--dark);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  height: 35vh;
+  flex-wrap: wrap;
+  border-top-left-radius: 15px;
 }
-/* line 80, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .header__image {
-  height: 200px;
+  height: 100%;
 }
-/* line 83, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .header__photo {
   height: inherit;
   width: auto;
-  border-radius: 50%;
+  border-top-left-radius: 15px;
 }
 
-/* line 90, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 .container {
   margin-bottom: 1em;
+  border-bottom-left-radius: 15px;
 }
