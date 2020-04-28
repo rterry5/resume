@@ -35,7 +35,10 @@ h3 {
   font-size: 1.5em;
   letter-spacing: .1em;
   color: var(--hot-pink);
-  text-shadow: 0 0.1em var(--white);
+}
+
+h4 {
+  color: var(--white);
 }
 
 body {
@@ -81,7 +84,7 @@ body {
     &__link-content {
       text-decoration: none;
       padding: 20px;
-      color: var(--medium-blue);
+      color: var(--white);
       @media only screen and (max-width: 551px) {
         padding: 0;
       }
@@ -105,12 +108,6 @@ body {
   }
 }
 
-// .main-container {
-//   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-//     0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
-//     0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
-// }
-
 .content {
   background-color: #020511d9;
   height: fit-content;
@@ -123,6 +120,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 2.5em;
     @media only screen and (max-width: 700px) {
       width: 100%;
       height: fit-content;
@@ -130,7 +128,7 @@ body {
     }
   }
   &__blocks {
-    margin: 1.2em;
+    margin: 1.5em;
     width: 65%;
     line-height: 1.5;
     @media only screen and (max-width: 700px) {
@@ -197,8 +195,6 @@ body {
   &__social {
     display: flex;
     justify-content: center;
-    &-icons {
-    }
   }
   &__image {
     width: 50px;
